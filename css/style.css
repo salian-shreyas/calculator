@@ -1,0 +1,121 @@
+body {
+  background: #000d;
+  color: #fff;
+  font-family: monospace;
+  font-size: 24px;
+}
+
+.border-box {
+  --webkit-box-sizing: border-box;
+  --moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#calculator {
+  display: flex;
+  justify-content: center;
+  margin-top: 15vh;
+}
+
+.container {
+  padding: 1em;
+  border: 2px solid dodgerblue;
+  border-radius: 4px;
+  box-shadow: 0.5em 0.5em #000;
+}
+
+#display .row {
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-around;
+}
+
+#display .item {
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+[type='text'] {
+    font-size: 20px;
+    padding: 0.5em;
+    border: 3px solid tomato;
+    border-radius: 10px;
+    color: white;
+    background-color: #000a;
+}
+
+#clear {
+  border: 3px solid tomato;
+  border-radius: 10px;
+  font-size: 0.7em;
+  box-sizing: border-box;
+  background-color: #000a;
+}
+
+#inputs {
+  margin: 10px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 1em 0.75em;
+}
+
+#inputs .item {
+  width: 3em;
+  height: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#inputs .items-border {
+  background-color: #000a;
+  border: 3px solid tomato;
+  border-radius: 25px;
+  box-shadow: 0 4px 4px 4px #000;
+}
+
+.button-click {
+  transform: scale(0.95);
+}
+
+#equals {
+  width: 7.1em !important;
+  grid-column: 3/5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* This is comment */
