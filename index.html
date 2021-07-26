@@ -5,7 +5,7 @@
     <title>Calculator</title>
 
     <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="./javascript/script.js">
+    <script type="text/javascript" src="./javascript/script.js" defer>
 
     </script>
 
@@ -22,7 +22,7 @@
           <div id="display" class="border-box">
             <div class="row">
               <div class="item">
-                <input type="text" name="output" value="0">
+                <input type="text" name="output" value="0" maxlength='12'>
               </div>
               <div id="clear" class="item">CLEAR</div>
             </div>
@@ -30,24 +30,24 @@
 
           <div id="inputs" class="border-box">
 
-              <div class="item items-border number"><kbd>7</kbd></div>
-              <div class="item items-border number"><kbd>8</kbd></div>
-              <div class="item items-border number"><kbd>9</kbd></div>
-              <div class="item items-border opearator"><kbd>+</kbd></div>
+              <div data-key='55' data-key2='36' class="item items-border number"><kbd>7</kbd></div>
+              <div data-key='56' data-key2='38' class="item items-border number"><kbd>8</kbd></div>
+              <div data-key='57' data-key2='33' class="item items-border number"><kbd>9</kbd></div>
+              <div data-key='107' class="item items-border operator"><kbd>+</kbd></div>
 
-              <div class="item items-border number"><kbd>4</kbd></div>
-              <div class="item items-border number"><kbd>5</kbd></div>
-              <div class="item items-border number"><kbd>6</kbd></div>
-              <div class="item items-border number"><kbd>-</kbd></div>
+              <div data-key='52' data-key2='37' class="item items-border number"><kbd>4</kbd></div>
+              <div data-key='53' data-key2='12' class="item items-border number"><kbd>5</kbd></div>
+              <div data-key='54' data-key2='39' class="item items-border number"><kbd>6</kbd></div>
+              <div data-key='109' class="item items-border operator"><kbd>-</kbd></div>
 
-              <div class="item items-border number"><kbd>1</kbd></div>
-              <div class="item items-border number"><kbd>2</kbd></div>
-              <div class="item items-border number"><kbd>3</kbd></div>
-              <div class="item items-border number"><kbd>X</kbd></div>
+              <div data-key='49' data-key2='35' class="item items-border number"><kbd>1</kbd></div>
+              <div data-key='50' data-key2='40' class="item items-border number"><kbd>2</kbd></div>
+              <div data-key='51' data-key2='34' class="item items-border number"><kbd>3</kbd></div>
+              <div data-key='106' class="item items-border operator"><kbd>x</kbd></div>
 
-              <div class="item items-border operator"><kbd>/</kbd></div>
-              <div class="item items-border number"><kbd>0</kbd></div>
-              <div id="equals" class="item items-border operator"><kbd>=</kbd></div>
+              <div data-key='111' class="item items-border operator"><kbd>/</kbd></div>
+              <div data-key='48' class="item items-border number"><kbd>0</kbd></div>
+              <div data-key='187' id="equals" class="item items-border"><kbd>=</kbd></div>
 
           </div> <!--inputs-->
 

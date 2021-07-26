@@ -40,6 +40,7 @@ body {
 [type='text'] {
     font-size: 20px;
     padding: 0.5em;
+    text-align: right;
     border: 3px solid tomato;
     border-radius: 10px;
     color: white;
