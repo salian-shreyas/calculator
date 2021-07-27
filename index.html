@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <title>Calculator</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Zen+Loop&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/16893b92d6.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="./javascript/script.js" defer>
 
@@ -20,34 +26,81 @@
         <div class="container">
 
           <div id="display" class="border-box">
-            <div class="row">
               <div class="item">
-                <input type="text" name="output" value="0" maxlength='12'>
+                <div id="display-input" class="border-box">0</div>
               </div>
-              <div id="clear" class="item">CLEAR</div>
-            </div>
           </div>
 
           <div id="inputs" class="border-box">
 
-              <div data-key='55' data-key2='36' class="item items-border number"><kbd>7</kbd></div>
-              <div data-key='56' data-key2='38' class="item items-border number"><kbd>8</kbd></div>
-              <div data-key='57' data-key2='33' class="item items-border number"><kbd>9</kbd></div>
-              <div data-key='107' class="item items-border operator"><kbd>+</kbd></div>
+              <div id="clear" class="item non-number"><strong>AC</strong></div>
+              <div id="backspace" data-key='8' class="item non-number">
+                <kbd>
+                  <i class="fas fa-backspace"></i>
+                </kbd>
+              </div>
+              <div data-key='111' class="item non-number operator">
+                <kbd id='/'>
+                  <i class="fas fa-divide"></i>
+                </kbd>
+              </div>
 
-              <div data-key='52' data-key2='37' class="item items-border number"><kbd>4</kbd></div>
-              <div data-key='53' data-key2='12' class="item items-border number"><kbd>5</kbd></div>
-              <div data-key='54' data-key2='39' class="item items-border number"><kbd>6</kbd></div>
-              <div data-key='109' class="item items-border operator"><kbd>-</kbd></div>
+              <div data-key2='55' data-key='103' class="item items-border number">
+                <kbd>7</kbd>
+              </div>
+              <div data-key2='56' data-key='104' class="item items-border number">
+                <kbd>8</kbd>
+              </div>
+              <div data-key2='57' data-key='105' class="item items-border number">
+                <kbd>9</kbd>
+              </div>
+              <div data-key='106' class="item non-number operator">
+                <kbd id='*'>
+                  <i class="fas fa-times"></i>
+                </kbd>
+              </div>
 
-              <div data-key='49' data-key2='35' class="item items-border number"><kbd>1</kbd></div>
-              <div data-key='50' data-key2='40' class="item items-border number"><kbd>2</kbd></div>
-              <div data-key='51' data-key2='34' class="item items-border number"><kbd>3</kbd></div>
-              <div data-key='106' class="item items-border operator"><kbd>x</kbd></div>
+              <div data-key2='52' data-key='100' class="item items-border number">
+                <kbd>4</kbd>
+              </div>
+              <div data-key2='53' data-key='101' class="item items-border number">
+                <kbd>5</kbd>
+              </div>
+              <div data-key2='54' data-key='102' class="item items-border number">
+                <kbd>6</kbd>
+              </div>
+              <div data-key='109' class="item non-number operator">
+                <kbd id='-'>
+                  <i class="fas fa-minus"></i>
+                </kbd>
+              </div>
 
-              <div data-key='111' class="item items-border operator"><kbd>/</kbd></div>
-              <div data-key='48' class="item items-border number"><kbd>0</kbd></div>
-              <div data-key='187' id="equals" class="item items-border"><kbd>=</kbd></div>
+              <div data-key2='49' data-key='97' class="item items-border number">
+                <kbd>1</kbd>
+              </div>
+              <div data-key2='50' data-key='98' class="item items-border number">
+                <kbd>2</kbd>
+              </div>
+              <div data-key2='51' data-key='99' class="item items-border number">
+                <kbd>3</kbd>
+              </div>
+              <div data-key='107' class="item non-number operator">
+                <kbd id='+'>
+                  <i class="fas fa-plus"></i>
+                </kbd>
+              </div>
+
+              <div data-key='110' class="item items-border dot">
+                <kbd>.</kbd>
+              </div>
+              <div data-key='96' data-key2='48' class="item items-border number">
+                <kbd>0</kbd>
+              </div>
+              <div data-key='187' id="equals" class="item non-number">
+                <kbd>
+                  <i class="fas fa-equals"></i>
+                </kbd>
+              </div>
 
           </div> <!--inputs-->
 
@@ -60,27 +113,3 @@
 
   </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- This is comment -->
